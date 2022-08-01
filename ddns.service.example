@@ -1,0 +1,10 @@
+[Unit]
+Description=Updates DNS records with local IP
+Wants=ddns.timer
+
+[Service]
+Type=oneshot
+ExecStart=/path/to/venv/python /path/to/script
+
+[Install]
+WantedBy=multi-user.target

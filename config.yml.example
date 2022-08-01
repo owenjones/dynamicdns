@@ -1,0 +1,12 @@
+homeassistant:
+  token: 
+  url: homeassistant.local
+  sensor: router_ip
+  
+digitalocean:
+  token: 
+  domains:
+    root:
+      domain: example.com
+      records:
+        - internal

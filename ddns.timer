@@ -1,0 +1,10 @@
+[Unit]
+Description=Updates DNS records with local IP
+Requires=ddns.service
+
+[Timer]
+Unit=ddns.service
+OnCalendar=*:0/15:00
+
+[Install]
+WantedBy=timers.target
