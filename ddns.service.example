@@ -4,7 +4,8 @@ Wants=ddns.timer
 
 [Service]
 Type=oneshot
-ExecStart=/path/to/venv/python /path/to/script
+WorkingDirectory=/path/to/script
+ExecStart=/path/to/venv/python /path/to/script/update.py
 
 [Install]
 WantedBy=multi-user.target
